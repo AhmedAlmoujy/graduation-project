@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: #0A0C0F;
+  --color-bg-surface: #111418;
+  --color-bg-elevated: #181C22;
+  --color-bg-overlay: #1E232B;
+  --color-border-subtle: #252B35;
+  --color-border-strong: #2E3641;
+  --color-text-primary: #E8ECF1;
+  --color-text-secondary: #8B93A1;
+  --color-text-tertiary: #545D6B;
+  --color-accent-cyan: #00C2FF;
+  --color-accent-cyan-dim: #00C2FF22;
+  --color-risk-critical: #FF3B3B;
+  --color-risk-high: #FF8C00;
+  --color-risk-medium: #FFD60A;
+  --color-risk-low: #34C759;
+  --color-risk-critical-dim: #FF3B3B18;
+  --color-risk-high-dim: #FF8C0018;
+  --color-risk-medium-dim: #FFD60A18;
+  --color-risk-low-dim: #34C75918;
+
+  --font-sans: var(--font-geist-sans), sans-serif;
+  --font-mono: var(--font-dm-mono), monospace;
+
+  --radius-card: 6px;
+  --radius-input: 4px;
+  --radius-row: 3px;
+
+  /* shadcn/ui mapping */
+  --background: var(--color-bg-base);
+  --foreground: var(--color-text-primary);
+  --card: var(--color-bg-surface);
+  --card-foreground: var(--color-text-primary);
+  --popover: var(--color-bg-overlay);
+  --popover-foreground: var(--color-text-primary);
+  --primary: var(--color-accent-cyan);
+  --primary-foreground: #000000;
+  --secondary: var(--color-bg-elevated);
+  --secondary-foreground: var(--color-text-primary);
+  --muted: var(--color-bg-elevated);
+  --muted-foreground: var(--color-text-secondary);
+  --accent: var(--color-bg-elevated);
+  --accent-foreground: var(--color-text-primary);
+  --destructive: var(--color-risk-critical);
+  --destructive-foreground: #ffffff;
+  --border: var(--color-border-subtle);
+  --input: var(--color-border-subtle);
+  --ring: var(--color-accent-cyan);
+  --radius: 6px;
+}
+
+@layer base {
+  :root {
+    --bg-base: #0A0C0F;
+    --bg-surface: #111418;
+    --bg-elevated: #181C22;
+    --bg-overlay: #1E232B;
+    --border-subtle: #252B35;
+    --border-strong: #2E3641;
+    --text-primary: #E8ECF1;
+    --text-secondary: #8B93A1;
+    --text-tertiary: #545D6B;
+    --accent-cyan: #00C2FF;
+    --accent-cyan-dim: #00C2FF22;
+    --risk-critical: #FF3B3B;
+    --risk-high: #FF8C00;
+    --risk-medium: #FFD60A;
+    --risk-low: #34C759;
+    --risk-critical-dim: #FF3B3B18;
+    --risk-high-dim: #FF8C0018;
+    --risk-medium-dim: #FFD60A18;
+    --risk-low-dim: #34C75918;
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--border-subtle);
+  }
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+  }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(3); opacity: 0; }
+}
+@keyframes bar-fill {
+  0% { width: 0%; }
+}
+@keyframes arc-draw-in {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+@keyframes ticker-scroll {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+@keyframes glow-pulse {
+  0% { filter: drop-shadow(0 0 2px var(--accent-cyan)); }
+  100% { filter: drop-shadow(0 0 10px var(--accent-cyan)); }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s infinite;
+}
+.animate-bar-fill {
+  animation: bar-fill 600ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+.animate-arc-draw-in {
+  animation: arc-draw-in 400ms ease-out forwards;
+}
+.animate-ticker-scroll {
+  animation: ticker-scroll 20s linear infinite;
+}
+.animate-glow-pulse {
+  animation: glow-pulse 1.5s ease-in-out alternate infinite;
+}

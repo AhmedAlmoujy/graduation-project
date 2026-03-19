@@ -1,0 +1,36 @@
+﻿node.exe : npm error code 
+ETARGET
+At C:\Users\SKYTOPPC\AppDa
+ta\Roaming\npm\npm.ps1:24 
+char:5
++     & "node$exe"  "$base
+dir/node_modules/npm/bin/n
+pm-cli.js" $args
++     ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (n  
+  pm error code ETARGET   
+ :String) [], RemoteEx    
+ception
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+npm error notarget No 
+matching version found 
+for lucide-react@^0.450.0.
+npm error notarget In 
+most cases you or one of 
+your dependencies are 
+requesting
+npm error notarget a 
+package version that 
+doesn't exist.
+npm error A complete log 
+of this run can be found 
+in: C:\Users\SKYTOPPC\AppD
+ata\Local\npm-cache\_logs\
+2026-03-18T22_16_51_338Z-d
+ebug-0.log
