@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { PageHeader } from "@/components/layout/PageHeader";
 import { ReportsFilters } from "@/components/reports/ReportsFilters";
 import { ReportCard } from "@/components/reports/ReportCard";

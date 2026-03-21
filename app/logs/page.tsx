@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { PageHeader } from "@/components/layout/PageHeader";
 import { LogsFilters } from "@/components/logs/LogsFilters";
 import { LogsTable } from "@/components/logs/LogsTable";
