@@ -43,5 +43,11 @@
     "eslint-config-next": "15.0.0",
     "postcss": "^8.4.47",
     "typescript": "^5.6.2"
+  },
+  "overrides": {
+    "react-leaflet": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
   }
 }
