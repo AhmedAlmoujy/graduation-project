@@ -1,4 +1,24 @@
-# SOC Security Intelligence Dashboard
+
+## 🚀 Deployment & Configuration
+
+### 1. GitHub Integration
+The project is set up to automatically deploy from GitHub to Vercel.
+
+### 2. Environment Variables
+To fix build errors and run the application, you **must** add the following environment variables in the [Vercel Project Dashboard](https://vercel.com/dashboard):
+
+- `MONGODB_URI`: Your MongoDB Atlas connection string.
+- `MONGODB_DB`: The name of your database (default: `ids_db`).
+
+### 3. Local Development
+1. Clone the repository.
+2. Copy `.env.example` to `.env`.
+3. Fill in your `MONGODB_URI`.
+4. Run `npm install && npm run dev`.
+
+### 4. GeoIP Database
+The application expects a `GeoLite2-City.mmdb` file in the `public/` directory for IP geolocation. If missing, the app will fall back to "Unknown Location".
+
 
 A MongoDB-powered visualization platform that transforms raw security data into actionable intelligence for SOC analysts, cybersecurity engineers, and network administrators.
 
