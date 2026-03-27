@@ -68,7 +68,7 @@ export default async function OverviewPage() {
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
         <div className="lg:col-span-3 bg-bg-surface border border-border-subtle rounded-md overflow-hidden shadow-sm relative group h-[400px]">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--color-bg-surface),_var(--color-bg-base))] flex justify-center items-center">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,var(--color-bg-surface),var(--color-bg-base))] flex justify-center items-center">
             <Globe className="w-48 h-48 text-border-strong opacity-20" strokeWidth={1} />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-bg-base/60 backdrop-blur-sm">
               <Link href="/map" className="px-6 py-2 bg-accent-cyan text-black font-semibold rounded-md hover:bg-opacity-90 transition-all transform hover:scale-105">
@@ -76,7 +76,7 @@ export default async function OverviewPage() {
               </Link>
             </div>
           </div>
-          <div className="absolute top-0 left-0 p-5 w-full bg-gradient-to-b from-bg-surface/80 to-transparent pointer-events-none">
+          <div className="absolute top-0 left-0 p-5 w-full bg-linear-to-b from-bg-surface/80 to-transparent pointer-events-none">
             <h3 className="text-[13px] font-semibold uppercase tracking-[0.08em] text-text-secondary">Global Threat Origin Preview</h3>
           </div>
         </div>

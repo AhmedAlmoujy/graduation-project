@@ -46,7 +46,7 @@ export function LogsTable() {
         <Eye className="w-5 h-5 text-text-tertiary" />
       </div>
       <h3 className="font-semibold text-text-primary">No logs found</h3>
-      <p className="text-sm max-w-sm mt-1">Try adjusting your filters to find what you're looking for.</p>
+      <p className="text-sm max-w-sm mt-1">Try adjusting your filters to find what you&apos;re looking for.</p>
       <button onClick={() => setFilters({ search: "", ip: "", method: "ALL", analyzed: "All", page: 1 })} className="mt-4 px-4 py-2 bg-bg-elevated text-sm font-medium rounded-md hover:bg-border-subtle transition-colors">
         Clear all filters
       </button>

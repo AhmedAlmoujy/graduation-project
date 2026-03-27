@@ -37,7 +37,7 @@ export function ReportDetailDialog({ report, onClose }: { report: ThreatReport; 
   else if (report.risk_score >= 4) stripeColor = "bg-risk-medium";
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-6">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-6">
       <div className="absolute inset-0 bg-black/80 backdrop-blur-md transition-opacity" onClick={onClose} />
       
       <div className="relative w-full max-w-4xl h-[85vh] bg-bg-surface border border-border-strong shadow-[0_0_40px_rgba(0,0,0,0.8)] rounded-xl overflow-hidden flex flex-col animate-in zoom-in-95 duration-200">
@@ -65,7 +65,7 @@ export function ReportDetailDialog({ report, onClose }: { report: ThreatReport; 
           </div>
         </div>
 
-        <div className="flex-1 overflow-y-auto p-8 space-y-10 custom-scrollbar bg-[radial-gradient(ellipse_at_top,_var(--color-bg-elevated),_transparent)] relative">
+        <div className="flex-1 overflow-y-auto p-8 space-y-10 custom-scrollbar bg-[radial-gradient(ellipse_at_top,var(--color-bg-elevated),transparent)] relative">
           <div className="grid grid-cols-4 gap-6 relative z-10">
             <div className="col-span-1 p-5 bg-bg-surface/80 backdrop-blur-sm border border-border-subtle rounded-md shadow-sm">
               <label className="text-[11px] uppercase tracking-wider font-semibold text-text-tertiary block mb-3">Risk Status</label>

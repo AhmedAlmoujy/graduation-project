@@ -1,0 +1,48 @@
+
+> soc-dashboard@1.0.0 build
+> next build
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of F:\package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * F:\Graduation-roject_DAshboard\soc-dashboard\package-lock.json
+
+   ▲ Next.js 15.5.13
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 12.3s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/11) ...
+   Generating static pages (2/11) 
+   Generating static pages (5/11) 
+   Generating static pages (8/11) 
+ ✓ Generating static pages (11/11)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ƒ /                                     111 kB         230 kB
+├ ○ /_not-found                            996 B         104 kB
+├ ƒ /api/export                            140 B         103 kB
+├ ƒ /api/health                            140 B         103 kB
+├ ƒ /api/logs                              140 B         103 kB
+├ ƒ /api/reports                           140 B         103 kB
+├ ƒ /api/stats                             140 B         103 kB
+├ ƒ /api/traffic                           140 B         103 kB
+├ ƒ /logs                                3.74 kB         130 kB
+├ ○ /map                                 2.33 kB         105 kB
+├ ƒ /reports                             4.29 kB         125 kB
+└ ƒ /traffic                             3.46 kB         130 kB
++ First Load JS shared by all             103 kB
+  ├ chunks/255-73975310776ced63.js       45.7 kB
+  ├ chunks/4bd1b696-409494caf8c83275.js  54.2 kB
+  └ other shared chunks (total)           2.6 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

@@ -76,6 +76,9 @@
 }
 
 @layer base {
+}
+
+@layer base {
   * {
     border-color: var(--border-subtle);
   }
@@ -84,6 +87,11 @@
     color: var(--text-primary);
     font-family: var(--font-sans);
   }
+}
+
+/* Fix for Leaflet tiles breaking in Tailwind */
+.leaflet-container img {
+  max-width: none !important;
 }
 
 @keyframes pulse-ring {
